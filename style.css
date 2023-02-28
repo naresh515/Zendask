@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif !important;
+}
+
+.container {
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    max-width: 100%;
+    margin: 0;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 7px 9px 8px lightgrey;
+}
+
+
+.nav {
+    width: 100%;
+    color: hsl(186, 56%, 29%);
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav .box {
+    color: hsl(186, 56%, 29%);
+    text-decoration: none;
+}
+
+.box a {
+    display: inline-block;
+    padding: 30px;
+    font-size: 17px;
+    text-decoration: none;
+    color: hsl(186, 56%, 29%);
+}
+
+.button {
+    background-color: #1ecce7;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+
+
+.header {
+    height: 300px;
+    text-align: center;
+}
+
+.header h1 {
+    color: hsl(186, 56%, 29%);
+    font-size: 70px;
+    margin: 0;
+    line-height: 70px;
+    margin-top: 20px;
+}
+
+.color_bg {
+    background-color: white;
+    width: 80%;
+    margin-left: 140px;
+    margin-bottom: 100px;
+}
+
+.img1 {
+    cursor: pointer;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+
+.img1 img {
+    height: auto;
+    width: 120px;
+    margin-left: 70px;
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
+
+.img1 img:hover {
+    filter: none;
+}
+
+.white_bg {
+    background-color: white;
+    width: 80%;
+}
+
+.center {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-left: 140px;
+    margin-bottom: 15px;
+    gap: 100px;
+}
+
+.center div:hover {
+    box-shadow: 2px 2px 9px 8px lightgrey;
+}
+
+.center div img {
+    transform: scale(1);
+    transition: 1s;
+}
+
+.center div:hover img {
+    transform: scale(1.09);
+    transition: .8s;
+    transition-timing-function: ease-in;
+}
+
+.center h1 {
+    color: hsl(186, 56%, 29%);
+}
+
+footer {
+    background-color: white;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+footer a {
+    margin-left: 38pc;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #3dafc0;
+}
+
+.center img {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.icon {
+    display: none;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    section {
+        display: inline;
+        height: auto;
+    }
+
+    .header {
+        display: inline;
+    }
+
+    .img1 {
+        display: inline;
+    }
+
+    .header h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    .center {
+        display: inline;
+        text-align: center;
+    }
+
+    .center div p {
+        padding: 0px 50px 10px;
+    }
+
+    .center div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    footer a {
+        display: flex;
+        margin-left: 5pc;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+
+    .nav a:not() {
+        display: block;
+    }
+
+    .icon {
+        display: block;
+        color: hsl(186, 56%, 29%);
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    .nav.responsive {
+
+        right: 0;
+        top: 0;
+        height: auto;
+        background-color: white;
+    }
+
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        font-size: 20px;
+        top: 0;
+        padding-top: 15px;
+    }
+
+    .nav .box {
+        display: none;
+    }
+
+    .nav.responsive .box {
+        display: block;
+    }
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .nav.responsive {
+
+        display: block;
+    }
+
+    .nav.responsive .button {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        height: 50px;
+    }
+}
